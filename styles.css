@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: url(https://static.vecteezy.com/system/resources/previews/002/548/011/original/tropical-lilac-background-free-vector.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #c061ff;
+    color: white;
+}
+
+button:active {
+    animation: bounce 0.3s;
+}
+
+/* Estilos para respuestas correctas e incorrectas */
+.correct {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+
+.incorrect {
+    background-color: #FF3B30 !important;
+    color: white !important;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.final-score {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
